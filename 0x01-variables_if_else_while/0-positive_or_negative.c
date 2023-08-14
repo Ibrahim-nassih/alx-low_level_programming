@@ -2,17 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
-    // Seed the random number generator with the current time
-    srand(time(NULL));
+/* betty style doc for function main goes there */
+int main(void)
+{
+    int n;
 
-    // Generate a random number and store it in the variable 'n'
-    int n = rand();
-
-    // Print the generated number
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
+    
+    /* Print the generated number */
     printf("The number is: %d\n", n);
 
-    // Check whether the number is positive, zero, or negative
+    /* Check whether the number is positive, zero, or negative */
     if (n > 0) {
         printf("is positive\n");
     } else if (n == 0) {
@@ -20,7 +21,7 @@ int main() {
     } else {
         printf("is negative\n");
     }
-
+    
     return 0;
 }
 
