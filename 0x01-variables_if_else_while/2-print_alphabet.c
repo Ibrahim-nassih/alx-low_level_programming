@@ -16,7 +16,6 @@ letter++;
 }
 putchar('\n');
 /* Print a new line*/
-    
 return (0);
 }
 
