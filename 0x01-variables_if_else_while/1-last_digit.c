@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 int n;
 int lastDigit;
@@ -19,11 +19,11 @@ lastDigit = n % 10;
 /* Print the last digit*/
 printf("Last digit of %d is %d", n, lastDigit);
 /* Check the value of the last digit and print the appropriate message*/
-if (lastDigit > 5) 
+if (lastDigit > 5)
 {
 printf(" and is greater than 5\n");
-} 
-else if (lastDigit == 0) 
+}
+else if (lastDigit == 0)
 {
 printf(" and is 0\n");
 }
