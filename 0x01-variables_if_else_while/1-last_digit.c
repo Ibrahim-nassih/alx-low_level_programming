@@ -17,7 +17,7 @@ n = rand();
 /* Get the last digit of the number*/
 lastDigit = n % 10;
 /* Print the last digit*/
-printf("is %d", lastDigit);
+printf("Last digit of %d is %d",n, lastDigit);
 /* Check the value of the last digit and print the appropriate message*/
 if (lastDigit > 5)
 {
