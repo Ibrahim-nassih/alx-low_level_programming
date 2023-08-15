@@ -1,16 +1,22 @@
 #include <stdio.h>
-
-int main() {
-    // Print the alphabet using putchar
-    char letter = 'a';
+/**
+ * main - print alphabet
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+/* Print the alphabet using putchar*/
+char letter;
+letter = 'a';
+while (letter <= 'z')
+{
+putchar(letter);
+letter++;
+}
+putchar('\n');
+/* Print a new line*/
     
-    while (letter <= 'z') {
-        putchar(letter);
-        letter++;
-    }
-    
-    putchar('\n');  // Print a new line
-    
-    return 0;
+return (0);
 }
 
