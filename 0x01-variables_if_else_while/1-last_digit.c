@@ -13,11 +13,11 @@ int lastDigit;
 /* Seed the random number generator with the current time*/
 srand(time(NULL));
 /* Generate a random number and store it in the variable 'n'*/
-n = rand();
+n = rand() - RAND_MAX / 2;
 /* Get the last digit of the number*/
 lastDigit = n % 10;
 /* Print the last digit*/
-printf("Last digit of %d is %d",n, lastDigit);
+printf("Last digit of %d is %d", n, lastDigit);
 /* Check the value of the last digit and print the appropriate message*/
 if (lastDigit > 5)
 {
