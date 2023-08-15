@@ -7,7 +7,8 @@
 int main(void)
 {
 /* Print the alphabet excluding 'q' and 'e' using putchar*/
-char letter;    
+char letter;
+letter = 'a';
 while (letter <= 'z')
 {
 if (letter != 'q' && letter != 'e')
